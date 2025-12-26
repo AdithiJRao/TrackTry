@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TrackTry Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+<div class="split-container">
+
+    <div class="left-section">
+        <h1 class="brand-title">TrackTry</h1>
+        <p class="brand-subtitle">Because progress isn't always linear.</p>
+    </div>
+
+    <div class="right-section">
+        <div class="login-card">
+            <h2>Welcome!</h2>
+            <p>Enter your email to continue</p>
+            <input id="email" class="input-field" placeholder="Enter Email">
+            <button class="login-main-btn" onclick="login()">Continue</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function login() {
+    let email = document.getElementById("email").value.trim();
+
+    if (email === "") return alert("Enter email!");
+
+    localStorage.setItem("email", email);
+    window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>

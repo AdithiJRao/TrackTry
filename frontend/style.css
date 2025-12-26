@@ -1,0 +1,260 @@
+/* ------------------ GLOBAL ------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffb3ec, #c79bff);
+    min-height: 100vh;
+}
+
+/* Split container for login */
+.split-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ------------------ LEFT SECTION ------------------ */
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    color: #3a0c4b;
+}
+
+.brand-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.brand-subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* ------------------ RIGHT SECTION ------------------ */
+
+.right-section {
+    flex: 1;
+    background: #ffeaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 380px;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #3a0c4b;
+}
+
+.create-text {
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.7;
+}
+
+/* ------------------ INPUTS ------------------ */
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px 0;
+    border-radius: 10px;
+    border: 1px solid #e5c4ff;
+    background: #f8f0ff;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-field:focus {
+    border-color: #bd74ff;
+}
+
+/* ------------------ BUTTONS ------------------ */
+
+.login-main-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #d87bfd, #ff7fbe);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-main-btn:hover {
+    opacity: 0.9;
+}
+
+.social {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e7d7ff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    color: #777;
+}
+
+/* ------------------ DASHBOARD ------------------ */
+
+.dashboard-body {
+    padding: 30px;
+    color: #3a0c4b;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.add-btn {
+    display: block;
+    margin: 0 auto 20px auto;
+    background: #ff8ad8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #ff74ce;
+}
+
+/* ------------------ TABLE ------------------ */
+
+.glass-table table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+th {
+    background: rgba(255,255,255,0.5);
+    font-weight: 600;
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* Dropdown inside dashboard */
+td select {
+    width: 130px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #f8f0ff;
+    border: 1px solid #e5c4ff;
+    font-size: 14px;
+}
+
+td select:focus {
+    border-color: #bd74ff;
+}
+
+/* ------------------ ADD FORM ------------------ */
+
+.add-body {
+    padding: 30px;
+}
+
+.glass-form {
+    width: 380px;
+    background: rgba(255,255,255,0.7);
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+
+.glass-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3a0c4b;
+}
+
+.glass-form .input-field {
+    margin-bottom: 15px;
+}
+
+/* ------------------ POPUP ------------------ */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-box {
+    background: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.popup-btn {
+    background: #d27dff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}

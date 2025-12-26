@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+<h1 class="page-title">Your Applications</h1>
+
+<div class="glass-table">
+    <table id="appTable">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Date Applied</th>
+                <th>Interview Date</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+        <!-- NEW ROW ALWAYS AT BOTTOM -->
+        <tfoot>
+            <tr id="newRow">
+                <td><input class="company"></td>
+                <td><input class="role"></td>
+
+                <td>
+                    <select class="type">
+                        <option>Internship</option>
+                        <option>Job</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select class="status">
+                        <option>Applied</option>
+                        <option>Accepted</option>
+                        <option>Rejected</option>
+                        <option>1st Round</option>
+                        <option>2nd Round</option>
+                    </select>
+                </td>
+
+                <td><input type="date" class="applied"></td>
+                <td><input type="date" class="interview"></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <button class="add-btn" onclick="saveEntry()">Save Entry</button>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+    <div class="popup-box">
+        <p id="popupText"></p>
+        <button class="popup-btn" onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
